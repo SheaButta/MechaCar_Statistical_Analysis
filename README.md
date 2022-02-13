@@ -97,11 +97,11 @@ The data visualization below for **Lot3** indicates the p-value is "**0.04**" an
 
 ## Study Design: MechaCar vs Competition
 
-The final analysis includes producing a study design to quantify MechaCar performance compared to their copetition. This study design will focus on what influences a consumer to purchase a MechaCar.  There are three (3) variables I would say would influence a MechaCar consumer which are, mpg, horse power and safety.  To help quantify how MechaCar's performance against the competition, the below items will help with the statistical analysis;
+The final analysis includes producing a study design to quantify MechaCar performance compared to their competition. This study design will focus on what influences a consumer to purchase a MechaCar.  There are three (3) variables I would influence a MechaCar consumer which are; mpg, horse power and safety.  To help quantify MechaCar's performance against the competition, the below items will help with the statistical analysis;
 
 - **Metrics to test**: These metrics to test include; mpg, horse power and safety.
-- **Null hypotheis**: MechaCar outperforms its' competiors.
-- **Statistical Test**: A t_est will be used to help determine how MechaCar performs against it's competition with respect to the above metrics.
+- **Null hypothesis**: MechaCar outperforms its' competitors.
+- **Statistical Test**: A t_est will be used to help determine how MechaCar performs against its' competition with respect to the above metrics.
 - **Data**: A dataset of numerical/continuous data.
 
 
