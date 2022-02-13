@@ -1,3 +1,7 @@
+############################################################################
+## DELIVERABLE 1
+############################################################################
+
 # 3. Use the library() function to load the dplyr package.
 library(dplyr)
 
@@ -12,5 +16,30 @@ lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AW
 # 6. Using the summary() function, determine the p-value and the r-squared value for the linear regression model.
 #summary()function. In your R console, use the following statement:
 summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD, data=MechaCar_csv))
+
+############################################################################
+## DELIVERABLE 2
+############################################################################
+
+#2 In your MechaCarChallenge.RScript, import and read in the Suspension_Coil.csv file as a table.
+Suspens_csv <- read.csv('./Resources/Suspension_Coil.csv')
+
+# 3. Write an RScript that creates a total_summary dataframe using the summarize() function to get the mean, median, variance, 
+#    and standard deviation of the suspension coil's PSI column.
+total_summary <- Suspens_csv %>% summarize(Mean=mean(PSI), Median=median(PSI),
+                                          Variance=var(PSI),    SD=sd(PSI),
+                                          .groups = 'keep') 
+
+
+# 4. Write an RScript that creates a lot_summary dataframe using the group_by() and the summarize() functions to group each manufacturing 
+#    lot by the mean, median, variance, and standard deviation of the suspension coil's PSI column.
+lot_summary <- Suspens_csv  %>% group_by(Manufacturing_Lot) %>% summarize(Mean=mean(PSI), Median=median(PSI),
+                                                                           Variance=var(PSI),  SD=sd(PSI),
+                                                                           .groups = 'keep')   
+
+
+
+
+
 
 
