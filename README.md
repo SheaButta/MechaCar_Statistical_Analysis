@@ -12,6 +12,7 @@ This project consists of assisting a new client (AutoRUs) with performing data a
 
 ## Resources
 RStudio
+
 Datasets:
 - [MechaCar](https://github.com/SheaButta/MechaCar_Statistical_Analysis/blob/main/Resources/MechaCar_mpg.csv)
 - [Suspension_Coil](https://github.com/SheaButta/MechaCar_Statistical_Analysis/blob/main/Resources/Suspension_Coil.csv)
