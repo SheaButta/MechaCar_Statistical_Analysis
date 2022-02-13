@@ -13,5 +13,4 @@ lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AW
 #summary()function. In your R console, use the following statement:
 summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD, data=MechaCar_csv))
 
-# 7. Save your MechaCarChallenge.RScript file to your GitHub repository.  
-# Pushed MechaCarChallenge.RScript to GitHub repository using GitBash
+
