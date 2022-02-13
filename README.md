@@ -21,3 +21,23 @@ The following questions need to be answered related to this analysis;
 
     ![](https://github.com/SheaButta/MechaCar_Statistical_Analysis/blob/main/Images/LinearRegression.PNG)
   
+
+## Summary Statistics on Suspension Coils
+
+The MechaCar Suspension_Coil.csv dataset contains the results from multiple production lots. In this dataset, the weight capacities of multiple suspension coils were tested to determine if the manufacturing process is consistent across production lots. 
+Using my knowledge of R, I will create summary statistics tables to show the following;
+
+	- The suspension coil’s PSI continuous variable across all manufacturing lots
+
+	- The following PSI metrics for each lot: mean, median, variance, and standard deviation.
+
+
+The first visualization below focuses on the variance for all manufacturing lots.  The design specifications for the MechaCar suspension coils dictates that the variance of the suspension coils must not exceed 100 pounds per square inch.  The variance across all 
+manufacturing lots meets the design specification as the **variance (62.29356)** is under 100 pounds per squar inch.  The second visualization illustrates the mean, median, variance and standard deviation for PSI metric for individual lots.
+The variances for Lot1 (0.9795918) and Lot2 indicate these lots meet the design specifications as their variance is under 100 pounds PSI.  Lot3 does not appear to meet the design specifications for the MechaCar suspension coils.
+
+	
+	![](https://github.com/SheaButta/MechaCar_Statistical_Analysis/blob/main/Images/total_summary_df.PNG)
+
+
+	![](https://github.com/SheaButta/MechaCar_Statistical_Analysis/blob/main/Images/lot_summary_df.PNG)

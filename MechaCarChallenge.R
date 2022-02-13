@@ -31,17 +31,11 @@ total_summary <- Suspens_csv %>% summarize(Mean=mean(PSI), Median=median(PSI),
                                           .groups = 'keep') 
 
 
-
-
-
 # 4. Write an RScript that creates a lot_summary dataframe using the group_by() and the summarize() functions to group each manufacturing 
 #    lot by the mean, median, variance, and standard deviation of the suspension coil's PSI column.
 lot_summary <- Suspens_csv  %>% group_by(Manufacturing_Lot) %>% summarize(Mean=mean(PSI), Median=median(PSI),
                                                                            Variance=var(PSI),  SD=sd(PSI),
                                                                            .groups = 'keep')   
-
-
-
 
 
 
