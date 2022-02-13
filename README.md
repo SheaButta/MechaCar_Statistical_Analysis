@@ -1,5 +1,22 @@
 # MechaCar_Statistical_Analysis
 
+## Overview
+This project consists of assisting a new client (AutoRUs) with performing data analysis on their new prototype, MechaCar.  MechaCar is suffering from production troubles that are blocking manufacturing progress.  AutoRUs has asked me to assist their internal data analyst with reviewing their production data for insights that may help their manufacturing team.
+
+### Deliverables:
+- Deliverable 1: Linear Regression to Predict MPG
+- Deliverable 2: Summary Statistics on Suspension Coils
+- Deliverable 3: T-Test on Suspension Coils
+- Deliverable 4: Design a Study Comparing the MechaCar to the Competition
+
+
+## Resources
+RStudio
+Datasets:
+- [MechaCar](https://github.com/SheaButta/MechaCar_Statistical_Analysis/blob/main/Resources/MechaCar_mpg.csv)
+- [Suspension_Coil](https://github.com/SheaButta/MechaCar_Statistical_Analysis/blob/main/Resources/Suspension_Coil.csv)
+
+
 ## Linear Regression to Predict MPG
 The formal definition of ***linear regression*** is a statistical model that is used to predict a continuous dependent variable based on one or more independent variables fitted to the equation of a line.  The job of a linear regression analysis is to calculate the slope and y intercept values (also known as coefficients) that minimize the overall distance between each data point from the linear model. There are two basic types of linear regression; 1) Simple linear regression builds a linear regression model with one independent variable and 2) Multiple linear regression builds a linear regression model with two or more independent variables.  In this statistical analysis, we want to figure out how to predict one variable given other variables. The variables related to this analysis are mpg (dependent variable) and the independent variables (vehicle_length, vehicle_weight, spoiler_angle, ground_clearance, AWD).
 
@@ -12,7 +29,7 @@ The following questions need to be answered related to this analysis;
 
   - Is the slope of the linear model considered to be zero? Why or why not?
     
-    **The slope of the linear model is **not** considered to be zero.  Since the p-value (5.35e-11) is above the assumed significance level of 0.05%, the slope is not considered     to be zero; moreover, this includes evidence to **reject our null hypothesis**.
+    The slope of the linear model is **not** considered to be zero.  Since the p-value (5.35e-11) is above the assumed significance level of 0.05%, the slope is not considered     to be zero; moreover, this includes evidence to **reject our null hypothesis**.
 
   - Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?  
   
@@ -61,20 +78,30 @@ This conclusion is confirmed by the p-value (0.06) being above the assumed signi
 
 
 The data visualizatoin for the "individual lots" below indicates their is no statisical difference between the manufacturing lots mean and the population mean of 1500 PSI.
-The data visualization below for **Lot1** indicates the p-value is "**1**" and the sample mean is 1500.  This data clearly shows the p-value is above the assumed significance level of 0.05.
-There is **not sufficient evidence to reject the null hypothesis** of a statistical difference.
+The data visualization below for **Lot1** indicates the p-value is "**1**" and the sample mean is 1500.  This data clearly shows the p-value is above the assumed significance level of 0.05.  There is **not sufficient evidence to reject the null hypothesis** of a statistical difference.
 
 	![](https://github.com/SheaButta/MechaCar_Statistical_Analysis/blob/main/Images/t_test_Lot1.PNG)
 
 
-The data visualization below for **Lot2** indicates the p-value is "**0.6072**" and the sample mean is 1500.2.  This data clearly shows the p-value is above the assumed significance level of 0.05.
-There is **not sufficient evidence to reject the null hypothesis** of a statistical difference.
+The data visualization below for **Lot2** indicates the p-value is "**0.6072**" and the sample mean is 1500.2.  This data clearly shows the p-value is above the assumed significance level of 0.05.  There is **not sufficient evidence to reject the null hypothesis** of a statistical difference.
 
 	![](https://github.com/SheaButta/MechaCar_Statistical_Analysis/blob/main/Images/t_test_Lot2.PNG)
 
 
-The data visualization below for **Lot3** indicates the p-value is "**0.04**" and a sample mean 1496.14.  This data shows the p-value is **below** the assumed significance level of 0.05.
-There is **sufficient evidence to reject the null hypothesis** of a statistical difference.  This may be something for MechaCar to look and this company is operating accordingly.
+The data visualization below for **Lot3** indicates the p-value is "**0.04**" and a sample mean 1496.14.  This data shows the p-value is **below** the assumed significance level of 0.05.  There is **sufficient evidence to reject the null hypothesis** of a statistical difference.  This may be something for MechaCar to look and this company is operating accordingly.
 
 	![](https://github.com/SheaButta/MechaCar_Statistical_Analysis/blob/main/Images/t_test_Lot3.PNG)
+
+
+## Study Design: MechaCar vs Competition
+
+The final analysis includes producing a study design to quantify MechaCar performance compared to their copetition. This study design will focus on what influences a consumer to purchase a MechaCar.  There are three (3) variables I would say would influence a MechaCar consumer which are, mpg, horse power and safety.  To help quantify how MechaCar's performance against the competition, the below items will help with the statistical analysis;
+
+- **Metrics to test**: These metrics to test include; mpg, horse power and safety.
+- **Null hypotheis**: MechaCar outperforms its' competiors.
+- **Statistical Test**: A t_est will be used to help determine how MechaCar performs against it's competition with respect to the above metrics.
+- **Data**: A dataset of numerical/continuous data.
+
+
+
 
