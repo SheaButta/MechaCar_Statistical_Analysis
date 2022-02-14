@@ -1,7 +1,7 @@
 # MechaCar_Statistical_Analysis
 
 ## Overview
-This project consists of assisting a new client (AutoRUs) with performing data analysis on their new prototype, MechaCar.  MechaCar is suffering from production troubles that are blocking manufacturing progress.  AutoRUs has asked me to assist their internal data analyst with reviewing their production data for insights that may help their manufacturing team.
+This project consists of assisting a new client (AutoRUs) with performing data analysis on their new prototype, MechaCar.  MechaCar is suffering from production troubles that are blocking manufacturing progress.  AutoRUs has asked me to assist their internal data analyst with reviewing their production data for insights that may help their manufacturing team.  As always, my analysis followed the data analysis principles of (1) Determine the number of rows and columns; (2) Data types used; and (3) Is the data readable?
 
 ### Deliverables:
 - Deliverable 1: Linear Regression to Predict MPG
